@@ -1,4 +1,4 @@
-//#INPUT 1
+package Recursion;//#INPUT 1
 // "abc" = abc acb bac bca cab cba
 
 import java.util.*;

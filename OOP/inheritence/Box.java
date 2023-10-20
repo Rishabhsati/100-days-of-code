@@ -1,5 +1,4 @@
-package properties.inheritence;
-
+package inheritence;
 public class Box {
     double l;
     double h;
