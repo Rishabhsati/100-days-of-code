@@ -1,7 +1,6 @@
 package Stack;
 
 import java.util.*;
-import java.lang.*;
 import java.io.*;
 public class nextGreaterElement {
 
@@ -11,7 +10,6 @@ public class nextGreaterElement {
         Stack<Integer> st = new Stack<>();
         long[] ans = new long[n];
         for (int i = n-1; i>=0; i--) {
-//            System.out.println(st.peek());
             while(st.size() > 0 && arr[st.peek()] <= arr[i]){
                 st.pop();
             }
