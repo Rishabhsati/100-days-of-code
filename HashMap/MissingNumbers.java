@@ -1,6 +1,27 @@
 package HashMap;
 import java.util.*;
 
+public class MissingNumbers{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i=0; i<n; i++){
+            arr[i]= sc.nextInt();
+        }
+
+        int m = sc.nextInt();
+        int brr[] = new int[m];
+        for(int i=0; i<m; i++){
+            brr[i]= sc.nextInt();
+        }
+
+        Solution Obj = new Solution();
+        Obj.missingNumbers(n,arr,m,brr);
+    }
+}
+
 class Solution {
     static void missingNumbers(int n, int arr[], int m, int brr[]) {
         //Write your code here
@@ -43,26 +64,5 @@ class Solution {
 				System.out.print(i+" ");
 			}	
 		}
-    }
-}
-
-public class MissingNumbers{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int n = sc.nextInt();
-        int arr[] = new int[n];
-        for(int i=0; i<n; i++){
-            arr[i]= sc.nextInt();
-        }
-
-        int m = sc.nextInt();
-        int brr[] = new int[m];
-        for(int i=0; i<m; i++){
-            brr[i]= sc.nextInt();
-        }
-
-        Solution Obj = new Solution();
-        Obj.missingNumbers(n,arr,m,brr);
     }
 }
