@@ -1,6 +1,5 @@
 // https://leetcode.com/problems/3sum/description/
 
-package Array_5;
 
 import java.util.*;
 

@@ -1,4 +1,3 @@
-package Array_5;
 
 import java.util.ArrayList;
 import java.util.Scanner;

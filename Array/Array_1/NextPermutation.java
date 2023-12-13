@@ -2,8 +2,6 @@ package Array_1;
 
 import java.util.Scanner;
 
-import Recursion.Permutation;
-
 public class NextPermutation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
