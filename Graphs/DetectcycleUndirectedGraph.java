@@ -22,7 +22,7 @@ public class DetectcycleUndirectedGraph {
         else
             System.out.println("Does not contain cycle");
     }
-
+    
     private static boolean isCycle(int n, ArrayList<ArrayList<Integer>> adj) {
         boolean visited[] = new boolean[n];
         for(int i=0;i<n;i++){
@@ -32,6 +32,7 @@ public class DetectcycleUndirectedGraph {
         }
         return false;
     }
+    // here we are using dfs to detect the cycle 
 
     private static boolean check(ArrayList<ArrayList<Integer>> adj, int src, boolean[] visited, int parent) {
         visited[src] = true;
