@@ -25,6 +25,15 @@ public class DetectCycleInDirectedGraph {
         } else {
             System.out.println("False");
         }
+
+        // FOR KAHN'S ALGO || BFS
+
+        boolean ans2 = isCycle(V, adj);
+        if (ans2 == true) {
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
     }
 
     private static boolean isCyclic(int v, ArrayList<Integer>[] adj) {
@@ -50,4 +59,26 @@ public class DetectCycleInDirectedGraph {
         recSt[src]=false;
         return false;
     }
+
+    // USING KAHN'S ALGO || BFS  TO DETECT CYCLE 
+    public static boolean isCycle(int V, ArrayList<Integer>[] adj) {
+        // Your code here
+            int count = 0;
+            int indegree[] = new int[V];
+            for(int i=0;i<V;i++){
+                for(int x:adj[i]) indegree[x]++;
+            }
+            Queue<Integer> q = new LinkedList<>();
+            for(int i=0;i<V;i++){
+                if(indegree[i]==0) q.add(i);
+            }
+            while(q.size()>0){
+                int u = q.poll();
+                for(int v:adj[u]){
+                    if(--indegree[v]==0) q.add(v);
+                }
+                count++;
+            }
+            return (count!=V);
+       }
 }
