@@ -17,7 +17,7 @@ public class TopologicalSortBFS {
         }
         TopologicalSorting(adj,N);
     }
-    // KHAN'S ALGORITHM 
+    // KAHN'S ALGORITHM 
     private static void TopologicalSorting(ArrayList<ArrayList<Integer>> adj, int n) {
         int indegree[] = new int[n];
         for(int i=0;i<n;i++){
