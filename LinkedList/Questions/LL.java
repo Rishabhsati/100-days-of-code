@@ -1,3 +1,5 @@
+package Questions;
+
 class Node{
     int data;
     Node next;
@@ -12,8 +14,8 @@ class Node{
     }
 }
 public class LL {
-    private Node head;
-    private Node tail;
+    Node head;
+    Node tail;
     private int size;
     public LL() {
         this.size = 0;

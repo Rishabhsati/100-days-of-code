@@ -1,4 +1,6 @@
-import java.util.LinkedList;
+package Questions;
+
+import Questions.LL;
 
 public class Main {
     public static void main(String[] args) {
